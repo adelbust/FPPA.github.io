@@ -1,34 +1,69 @@
-.calendario {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.calendario th,
-.calendario td {
-  text-align: center;
-  padding: 10px;
-}
-
-.calendario th {
-  background-color: #000;
-  color: #fff;
-}
-
-.calendario td {
-  border: 1px solid #ddd;
-}
-
-.calendario td:hover {
-  background-color: #f5f5f5;
-}
-
-@media (max-width: 600px) {
-  .calendario {
-    font-size: 12px;
+* {
+    box-sizing: border-box;
   }
   
-  .calendario th,
-  .calendario td {
-    padding: 5px;
+  body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
   }
-}
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background-color: #0066CC;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    min-width: 300px;
+    min-height: 200px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1 0 30%;
+    max-width: 350px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .card .fecha {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo-container img {
+    height: 80px;
+    width: auto;
+  }
+  
