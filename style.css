@@ -1,0 +1,34 @@
+.calendario {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.calendario th,
+.calendario td {
+  text-align: center;
+  padding: 10px;
+}
+
+.calendario th {
+  background-color: #000;
+  color: #fff;
+}
+
+.calendario td {
+  border: 1px solid #ddd;
+}
+
+.calendario td:hover {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 600px) {
+  .calendario {
+    font-size: 12px;
+  }
+  
+  .calendario th,
+  .calendario td {
+    padding: 5px;
+  }
+}
